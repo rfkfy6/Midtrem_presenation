@@ -1,0 +1,295 @@
+2010-08-25 12:08:42,270 [myid:] - INFO  [main:QuorumPeerConfig@92] - Reading configuration from: ./localhost:2183/zoo.cfg
+2010-08-25 12:08:42,299 [myid:] - INFO  [main:QuorumPeerConfig@289] - Defaulting to majority quorums
+2010-08-25 12:08:42,512 [myid:3] - INFO  [main:QuorumPeerMain@119] - Starting quorum peer
+2010-08-25 12:08:42,570 [myid:3] - INFO  [main:NIOServerCnxn$Factory@149] - binding to port 0.0.0.0/0.0.0.0:2183
+2010-08-25 12:08:42,641 [myid:3] - INFO  [main:QuorumPeer@818] - tickTime set to 2000
+2010-08-25 12:08:42,642 [myid:3] - INFO  [main:QuorumPeer@829] - minSessionTimeout set to -1
+2010-08-25 12:08:42,643 [myid:3] - INFO  [main:QuorumPeer@840] - maxSessionTimeout set to -1
+2010-08-25 12:08:42,644 [myid:3] - INFO  [main:QuorumPeer@855] - initLimit set to 10
+2010-08-25 12:08:42,689 [myid:3] - INFO  [main:FileSnap@82] - Reading snapshot ./localhost:2183/data/version-2/snapshot.700000000
+2010-08-25 12:08:42,735 [myid:3] - INFO  [Thread-1:QuorumCnxManager$Listener@436] - My election bind port: 4183
+2010-08-25 12:08:42,775 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:QuorumPeer@620] - LOOKING
+2010-08-25 12:08:42,779 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:FastLeaderElection@663] - New election. My id =  3, Proposed zxid = 30064771072
+2010-08-25 12:08:42,813 [myid:3] - WARN  [Thread-2:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:42,815 [myid:3] - WARN  [Thread-3:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:113)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:156)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:629)
+2010-08-25 12:08:42,816 [myid:3] - WARN  [Thread-2:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:42,826 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 1 (n.leader), 30064771072 (n.zxid), 6 (n.round), LEADING (n.state), 1 (n.sid), LOOKING (my state)
+2010-08-25 12:08:42,848 [myid:3] - WARN  [Thread-6:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:42,851 [myid:3] - WARN  [Thread-7:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureReadOpen(SocketChannelImpl.java:113)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:156)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:629)
+2010-08-25 12:08:42,852 [myid:3] - WARN  [Thread-6:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:42,855 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn$Factory@256] - Accepted socket connection from /127.0.0.1:50799
+2010-08-25 12:08:42,866 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1314] - Processing stat command from /127.0.0.1:50799
+2010-08-25 12:08:42,882 [myid:3] - INFO  [Thread-8:NIOServerCnxn@1516] - Closed socket connection for client /127.0.0.1:50799 (no session established for client)
+2010-08-25 12:08:42,893 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 3 (n.leader), 30064771072 (n.zxid), 1 (n.round), LOOKING (n.state), 3 (n.sid), LOOKING (my state)
+2010-08-25 12:08:42,898 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), FOLLOWING (n.state), 2 (n.sid), LOOKING (my state)
+2010-08-25 12:08:42,903 [myid:3] - INFO  [WorkerSender Thread:QuorumCnxManager@162] - Have smaller server identifier, so dropping the connection: (4, 3)
+2010-08-25 12:08:42,918 [myid:3] - INFO  [WorkerSender Thread:QuorumCnxManager@162] - Have smaller server identifier, so dropping the connection: (5, 3)
+2010-08-25 12:08:42,934 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), FOLLOWING (n.state), 4 (n.sid), LOOKING (my state)
+2010-08-25 12:08:42,942 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), LEADING (n.state), 5 (n.sid), LOOKING (my state)
+2010-08-25 12:08:42,943 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:QuorumPeer@642] - FOLLOWING
+2010-08-25 12:08:42,957 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Learner@72] - TCP NoDelay set to: true
+2010-08-25 12:08:42,978 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), LEADING (n.state), 5 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:42,983 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:zookeeper.version=3.4.0--1, built on 07/09/2010 20:06 GMT
+2010-08-25 12:08:42,983 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:host.name=mobdev
+2010-08-25 12:08:42,984 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.version=1.6.0_14
+2010-08-25 12:08:42,984 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.vendor=Sun Microsystems Inc.
+2010-08-25 12:08:42,984 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.home=/usr/lib/jvm/java-6-sun-1.6.0.14/jre
+2010-08-25 12:08:42,985 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.class.path=log4j.jar:zookeeper.jar:.
+2010-08-25 12:08:42,986 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.library.path=/usr/lib/jvm/java-6-sun-1.6.0.14/jre/lib/i386/client:/usr/lib/jvm/java-6-sun-1.6.0.14/jre/lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.14/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib
+2010-08-25 12:08:42,986 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.io.tmpdir=/tmp
+2010-08-25 12:08:42,987 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:java.compiler=<NA>
+2010-08-25 12:08:42,987 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:os.name=Linux
+2010-08-25 12:08:42,988 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:os.arch=i386
+2010-08-25 12:08:42,988 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:os.version=2.6.27-8-eeepc
+2010-08-25 12:08:42,989 [myid:3] - WARN  [Thread-9:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:42,992 [myid:3] - WARN  [Thread-10:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.nio.channels.AsynchronousCloseException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:185)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:263)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:629)
+2010-08-25 12:08:43,024 [myid:3] - WARN  [Thread-9:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:43,028 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:user.name=andrei
+2010-08-25 12:08:43,029 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:user.home=/home/andrei
+2010-08-25 12:08:43,030 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Environment@97] - Server environment:user.dir=/home/andrei/src/pyzk-recipes/test_5_trunk
+2010-08-25 12:08:43,033 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:ZooKeeperServer@151] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir ./localhost:2183/data/version-2 snapdir ./localhost:2183/data/version-2
+2010-08-25 12:08:43,061 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), FOLLOWING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:43,062 [myid:3] - WARN  [Thread-15:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:43,064 [myid:3] - WARN  [Thread-16:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.nio.channels.AsynchronousCloseException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:185)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:263)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:629)
+2010-08-25 12:08:43,065 [myid:3] - WARN  [Thread-15:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:43,069 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:Learner@282] - Getting a diff from the leader 0x700000000
+2010-08-25 12:08:43,079 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), FOLLOWING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:43,092 [myid:3] - WARN  [Thread-18:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.nio.channels.AsynchronousCloseException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:185)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:263)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:629)
+2010-08-25 12:08:43,093 [myid:3] - WARN  [Thread-17:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:43,096 [myid:3] - WARN  [Thread-17:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:43,112 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), FOLLOWING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:43,133 [myid:3] - INFO  [QuorumPeer:/0:0:0:0:0:0:0:0:2183:FileTxnSnapLog@208] - Snapshotting: 700000000
+2010-08-25 12:08:45,886 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn$Factory@256] - Accepted socket connection from /127.0.0.1:50816
+2010-08-25 12:08:45,887 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1314] - Processing stat command from /127.0.0.1:50816
+2010-08-25 12:08:45,888 [myid:3] - INFO  [Thread-21:NIOServerCnxn$StatCommand@1167] - Stat command output
+2010-08-25 12:08:45,890 [myid:3] - INFO  [Thread-21:NIOServerCnxn@1516] - Closed socket connection for client /127.0.0.1:50816 (no session established for client)
+2010-08-25 12:08:47,976 [myid:3] - WARN  [Thread-20:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.io.IOException: Channel eof
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:630)
+2010-08-25 12:08:48,894 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn$Factory@256] - Accepted socket connection from /127.0.0.1:50824
+2010-08-25 12:08:48,895 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1314] - Processing stat command from /127.0.0.1:50824
+2010-08-25 12:08:48,915 [myid:3] - INFO  [Thread-22:NIOServerCnxn$StatCommand@1167] - Stat command output
+2010-08-25 12:08:48,917 [myid:3] - INFO  [Thread-22:NIOServerCnxn@1516] - Closed socket connection for client /127.0.0.1:50824 (no session established for client)
+2010-08-25 12:08:48,935 [myid:3] - WARN  [Thread-19:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:48,936 [myid:3] - WARN  [Thread-19:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:48,974 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 0 (n.zxid), 1 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:48,996 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 3 (n.leader), 30064771072 (n.zxid), 1 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:49,017 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 4 (n.leader), 30064771072 (n.zxid), 1 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:49,186 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 5 (n.leader), 25769803776 (n.zxid), 6 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:51,922 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn$Factory@256] - Accepted socket connection from /127.0.0.1:50855
+2010-08-25 12:08:51,923 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1314] - Processing stat command from /127.0.0.1:50855
+2010-08-25 12:08:51,924 [myid:3] - INFO  [Thread-25:NIOServerCnxn$StatCommand@1167] - Stat command output
+2010-08-25 12:08:51,927 [myid:3] - INFO  [Thread-25:NIOServerCnxn@1516] - Closed socket connection for client /127.0.0.1:50855 (no session established for client)
+2010-08-25 12:08:54,058 [myid:3] - WARN  [Thread-5:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.io.IOException: Channel eof
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:630)
+2010-08-25 12:08:54,104 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,143 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,202 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,249 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,294 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,330 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,362 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,406 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,484 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,529 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,587 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,618 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,678 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,746 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,809 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,893 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:54,930 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn$Factory@256] - Accepted socket connection from /127.0.0.1:50891
+2010-08-25 12:08:54,931 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1314] - Processing stat command from /127.0.0.1:50891
+2010-08-25 12:08:54,932 [myid:3] - INFO  [Thread-26:NIOServerCnxn$StatCommand@1167] - Stat command output
+2010-08-25 12:08:54,934 [myid:3] - INFO  [Thread-26:NIOServerCnxn@1516] - Closed socket connection for client /127.0.0.1:50891 (no session established for client)
+2010-08-25 12:08:54,982 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,045 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,122 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,179 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,220 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,286 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,331 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,396 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,448 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,504 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,540 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,604 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,676 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,735 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,790 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,835 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,881 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,922 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:55,975 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,022 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,093 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,141 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,187 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,238 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,311 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,363 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,411 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,458 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,516 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,569 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,642 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,702 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,757 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,807 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,859 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,915 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,966 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:56,996 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,037 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,122 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,163 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,203 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,226 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,309 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,342 [myid:3] - WARN  [Thread-4:QuorumCnxManager$SendWorker@581] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1899)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1976)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:342)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:570)
+2010-08-25 12:08:57,343 [myid:3] - WARN  [Thread-4:QuorumCnxManager$SendWorker@589] - Send worker leaving thread
+2010-08-25 12:08:57,351 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 1 (n.leader), 0 (n.zxid), 1 (n.round), LOOKING (n.state), 1 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,429 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 1 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,468 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,593 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,638 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 1 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,673 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,804 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,885 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:57,952 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn$Factory@256] - Accepted socket connection from /127.0.0.1:50997
+2010-08-25 12:08:57,953 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1314] - Processing stat command from /127.0.0.1:50997
+2010-08-25 12:08:57,954 [myid:3] - INFO  [Thread-29:NIOServerCnxn$StatCommand@1167] - Stat command output
+2010-08-25 12:08:57,955 [myid:3] - INFO  [Thread-29:NIOServerCnxn@1516] - Closed socket connection for client /127.0.0.1:50997 (no session established for client)
+2010-08-25 12:08:57,975 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,063 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,163 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,215 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,258 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,309 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,363 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,400 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,446 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,490 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,525 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,570 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,597 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,622 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,650 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,677 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,702 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,741 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,770 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,797 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,856 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,917 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,951 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:58,979 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,028 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,064 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,103 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,137 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,159 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,188 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,216 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,246 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,270 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,299 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,322 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,376 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,401 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,430 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,455 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,481 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,554 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,578 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,635 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,677 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,709 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,743 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,771 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,797 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,820 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,843 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,863 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,892 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,915 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,942 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,966 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:08:59,990 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,023 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,065 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,090 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,116 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,144 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,172 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,196 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,217 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,237 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,265 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,286 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,313 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,335 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,360 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,381 [myid:3] - INFO  [WorkerReceiver Thread:FastLeaderElection@496] - Notification: 2 (n.leader), 34359738368 (n.zxid), 7 (n.round), LOOKING (n.state), 2 (n.sid), FOLLOWING (my state)
+2010-08-25 12:09:00,413 [myid:3] - WARN  [Thread-28:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.io.IOException: Channel eof
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:630)
+2010-08-25 12:09:00,430 [myid:3] - WARN  [Thread-24:QuorumCnxManager$RecvWorker@658] - Connection broken: 
+java.io.IOException: Channel eof
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:630)

@@ -1,0 +1,28 @@
+Test demo was introduced by Andreisavu. https://github.com/andreisavu/pyzk-recipes
+
+I edited the source code to resolve errors and make the demo run. However, some features of the demo are not applicable because they require more debugging.     
+
+
+
+steps to run:
+
+$ cd test_5_trunk
+$ ./start.sh
+$ python fail.py 
+
+in another shell do:
+
+$ ./top.sh
+
+As you can see the cluster is pretty unstable. 
+fail.py kills and restarts one random node at a time. 
+Even if this happens the application should be able
+to easily survive server failures. 
+
+Start the queue:
+
+$ python queue.py 
+
+You should see multiple "Connected" messages.
+
+
